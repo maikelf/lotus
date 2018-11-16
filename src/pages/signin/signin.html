@@ -1,0 +1,36 @@
+
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>Sign In</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="content-logo">
+    <img src="assets/imgs/logo.png" class="logo" />
+  </div>
+  <div>
+    <form class="top50" (ngSubmit)="signIn()">  
+      <div class="form-group">
+        <label class="label-green">Name</label>
+        <input type="email" class="form-control" [(ngModel)]="sign.user" name="user" />
+      </div>
+      <div class="form-group">
+        <label class="label-green">Password</label>
+        <input type="password" class="form-control" [(ngModel)]="sign.password" name="password" />
+      </div>
+      <div class="form-group">
+        <button type="submit" class="hl-button">Sign In</button>
+      </div>
+    </form>
+    <div class="forgot">
+      <span (click)="recoverPassword()">Forgot your password ?</span>
+    </div>
+  </div>
+  <div class="loading" [hidden]="!signing">
+    <div class="loadingcontainer">
+      <img src="assets/imgs/loading.png" class="imgloading" /><br />
+      Sending...
+    </div>
+  </div>
+</ion-content>

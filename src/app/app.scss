@@ -1,0 +1,90 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+$base_color: #00B056;
+$danger_background: #f2dede;
+$danger_color: #a94442;
+$danger_border: #ebccd1;
+.sidemenu
+{
+    background-color: $base_color;
+    color: #fff;
+}
+.button-side-menu {
+    background: none !important;
+    border: none !important;
+    text-transform: uppercase;
+    color: #fff;
+}
+.button-side-menu-3 {
+    background: none !important;
+    border: none !important;
+    color: #fff;
+    margin: 0px 0px -15px 0px;
+}
+.button-side-menu-3 .item-inner {
+    border: none !important;
+}
+.button-side-menu .item-inner {
+    border: none !important;
+}
+.feed-side-menu
+{
+    margin-left: 16px;
+}
+.head-side-menu
+{
+    margin: 25px 20px;
+}
+.head-photo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    font-size: 40px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-top: 6px;
+}
+.head-name {
+    display: inline-block;
+    padding: 20px 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.logout {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.alert-err {
+    color: $danger_color !important;
+    background-color: $danger_background !important;
+    border-color: $danger_border !important;
+    opacity: 0.9 !important;
+}
+hr.menu-separator {
+    width: 90%;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid white;
+    padding: 0;
+}
+ion-icon {
+  font-size: 30px !important; //Preferred size here
+}

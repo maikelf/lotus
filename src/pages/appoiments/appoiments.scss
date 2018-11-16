@@ -1,0 +1,29 @@
+page-appoiments {
+    .webpage {
+        position: absolute;
+        z-index: 3;
+        top: -50px;
+        left: 0px;
+    }
+    .backgroundtemp {
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        color: black;
+        text-align: center;
+        margin-top: 50%;
+    }
+    .ht {
+        position: relative;
+        background-color: red;
+        height: 58px;
+        z-index: 87;
+        top: -15px;
+    }
+    iframe .x-navbar-wrap {
+      display: none !important;
+    }
+}

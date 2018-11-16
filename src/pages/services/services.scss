@@ -1,0 +1,19 @@
+page-services {
+    .webpage {
+        position: absolute;
+        z-index: 3;
+        top: -50px;
+        left: 0px;
+    }
+    .backgroundtemp {
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        color: black;
+        text-align: center;
+        margin-top: 50%;
+    }
+}

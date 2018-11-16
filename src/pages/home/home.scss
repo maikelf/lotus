@@ -1,0 +1,17 @@
+page-home {
+    .border-green {
+        border: solid 10px $base_color;
+    }
+    .content-init
+    {
+        text-align: center;
+        padding-top: 48%;
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .img-loading
+    {
+        width: 40%;
+        margin-bottom: 25px;
+    }
+}

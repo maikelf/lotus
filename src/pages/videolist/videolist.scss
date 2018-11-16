@@ -1,0 +1,41 @@
+page-videolist {
+    .capitalize {
+        text-transform: capitalize;
+    }
+    .label-green
+    {
+        color: $base_color;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+    }
+    input.form-control, select.form-control{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        border: solid 1px #9E9E9E;
+        border-radius: 50px;
+    }
+    .top20 {
+        margin-top: 20px;
+    }
+    .content-container {
+        position: relative;
+        top: 20px;
+        margin-top: -50px;
+    }
+    .play {
+        position: relative;
+        text-align: center;
+        font-size: 46px;
+        top: 118px;
+    }
+    .center {
+        text-align: center;
+    }
+    .videotitle {
+        margin-top: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}

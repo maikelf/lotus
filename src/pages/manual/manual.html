@@ -1,0 +1,55 @@
+<!--
+  Generated template for the ManualPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="secondary" hideBackButton="true">
+      <button ion-button menuToggle right>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Manual Techniques</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+
+  <ion-content padding>
+    <div class="top40">
+        <ion-grid>
+          <ion-row>
+            <ion-col col-6>
+              <div [ngClass]="{'op-active': op === 'body', 'op-no-active': op === 'anatomy'}" (click)="op='body'; form.body = ''">
+                BODY REGION
+              </div>
+            </ion-col>
+            <ion-col col-6>
+              <div [ngClass]="{'op-no-active': op === 'body', 'op-active': op === 'anatomy'}" (click)="op='anatomy'; form.anatomy = ''">
+                ANATOMY
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+    </div>
+    <form class="top40">
+      <div class="form-group" [hidden]="op === 'anatomy'">
+        <label class="label-green">Select</label>
+        <select class="form-control top15" [(ngModel)]="form.body" name="body" (change)="changeBodySelect()">
+          <option value="">-- Select --</option>
+          <option *ngFor = "let b of bodyPart" value="{{b.key}}">{{b.value}}</option>
+        </select>
+      </div>
+      <div class="form-group" [hidden]="op === 'body'">
+        <label class="label-green">Select</label>
+        <select class="form-control top15" [(ngModel)]="form.anatomy" name="anatomy" (change)="changeAnatomySelect()">
+          <option value="">-- Select --</option>
+          <option *ngFor = "let a of anatomySelect" value="{{a.key}}">{{a.value}}</option>
+        </select>
+      </div>
+    </form>  
+
+    <ion-fab center bottom (click)="gotoBooking()">
+      <button ion-fab color="secondary"><ion-icon name="calendar"></ion-icon></button>
+    </ion-fab>
+  </ion-content>
+  

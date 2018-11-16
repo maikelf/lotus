@@ -1,0 +1,21 @@
+<!--
+  Generated template for the VideoplayerPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title>{{title}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <iframe [src]='sanitizeURL(video)' width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <ion-fab center bottom (click)="gotoBooking()">
+    <button ion-fab color="secondary"><ion-icon name="calendar"></ion-icon></button>
+  </ion-fab>
+</ion-content>

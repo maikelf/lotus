@@ -1,0 +1,26 @@
+<!--
+  Generated template for the NotesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="secondary" hideBackButton="true">
+      <button ion-button menuToggle right>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Lotus Notes</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div class="backgroundtemp">
+      <img src="assets/imgs/favicon.png" /><br />
+      Loading...
+    </div>
+  <iframe class='webpage' name="samplePage" src="http://thehealinglotus.ca/lotus-notes/"  width="100%" height="120%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+  <ion-fab center bottom (click)="gotoBooking()">
+    <button ion-fab color="secondary"><ion-icon name="calendar"></ion-icon></button>
+  </ion-fab>
+</ion-content>

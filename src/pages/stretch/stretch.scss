@@ -1,0 +1,42 @@
+page-stretch {
+    .top40 {
+        margin-top: 40px;
+    }
+    .top15 {
+        margin-top: 15px;
+    }
+    input.form-control, select.form-control{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        border: solid 1px #9E9E9E;
+        border-radius: 50px;
+    }
+    .label-green
+    {
+        color: $base_color;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+    }
+    .op-active {
+        width: 90%;
+        margin: o auto;
+        background-color: green;
+        color: white;
+        font-weight: bold;
+        padding: 8px;
+        text-align: center;
+        border-radius: 15px;
+    }
+    .op-no-active {
+        width: 90%;
+        margin: o auto;
+        background-color: grey;
+        color: white;
+        font-weight: bold;
+        padding: 8px;
+        text-align: center;
+        border-radius: 15px;
+    }
+}

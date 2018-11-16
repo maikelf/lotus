@@ -1,0 +1,57 @@
+<!--
+  Generated template for the BodylandingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="secondary" hideBackButton="true">
+    <button ion-button menuToggle right>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Body</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding> 
+  <div class="top20 c">
+    <span (click)="imgActive = 'male'" [ngClass]="{'no-active': imgActive === 'female', 'active': imgActive === 'male'}">Male</span> / <span (click)="imgActive = 'female'" [ngClass]="{'no-active': imgActive === 'male', 'active': imgActive === 'female'}">Female</span>
+   </div>
+   <div *ngIf="imgActive === 'male'" class="c top20">
+      <img src="assets/imgs/male.png" usemap="#image-m-map">
+
+      <map name="image-m-map">
+          <area target="" alt="Head" title="Head" (click)="goTo('head')" coords="112,13,96,17,89,28,89,48,95,64,107,76,117,76,126,68,129,59,131,44,132,29,122,18,116,17" shape="poly">
+          <area target="" alt="Neck" title="Neck" (click)="goTo('neck')" coords="98,68,96,84,77,93,87,100,109,100,111,107,117,100,142,98,151,93,129,86,129,64,124,73,116,78,108,78" shape="poly">
+          <area target="" alt="Arm" title="Arm" (click)="goTo('arms')" coords="75,93,60,99,52,106,48,118,48,132,43,160,38,180,36,197,35,214,34,228,32,239,46,244,53,225,63,202,61,185,69,152,68,123,77,107,84,100" shape="poly">
+          <area target="" alt="Arm" title="Arm" (click)="goTo('arms')" coords="143,98,153,109,158,119,155,138,156,153,160,168,161,182,162,196,173,219,180,231,182,242,198,237,195,228,191,202,187,183,181,164,181,149,175,134,178,116,169,98,155,93" shape="poly">
+          <area target="" alt="Hand" title="Hand" (click)="goTo('hands')" coords="31,240,12,262,30,287,47,282,47,260,47,245" shape="poly">
+          <area target="" alt="Hand" title="Hand" (click)="goTo('hands')" coords="183,244,183,264,187,283,202,290,208,284,215,256,211,247,200,239" shape="poly">
+          <area target="" alt="Torse" title="Torse" (click)="goTo('torse')" coords="85,102,71,122,71,153,76,176,77,190,75,204,79,211,103,221,120,221,140,216,150,208,148,196,147,181,156,159,153,142,156,128,154,111,143,100,124,101,114,107,109,102" shape="poly">
+          <area target="" alt="Hip" title="Hip" (click)="goTo('hips')" coords="78,212,73,221,112,263,154,225,149,211,130,222,100,221" shape="poly">
+          <area target="" alt="Leg" title="Leg" (click)="goTo('legs')" coords="74,225,68,271,68,289,68,304,74,326,79,340,80,359,80,378,79,393,89,452,107,452,105,441,109,410,110,392,106,369,107,361,108,338,111,304,111,279,111,264" shape="poly">
+          <area target="" alt="Leg" title="Leg" (click)="goTo('legs')" coords="115,262,152,226,156,280,152,319,146,342,144,361,146,395,133,454,120,452,115,403,115,390,116,310,114,288,115,271,115,267" shape="poly">
+          <area target="" alt="Feet" title="Feet" (click)="goTo('feet')" coords="90,455,106,455,108,468,105,483,83,483,81,477,90,469" shape="poly">
+          <area target="" alt="Feet" title="Feet" (click)="goTo('feet')" coords="120,455,137,455,136,468,147,481,120,483,118,468" shape="poly">
+      </map>
+   </div>
+
+   <div *ngIf="imgActive === 'female'" class="top20 c">
+      <img src="assets/imgs/female.png" usemap="#image-f-map">
+
+      <map name="image-f-map">
+          <area target="" alt="Head" title="Head" (click)="goTo('head')" coords="115,26,96,37,87,54,87,80,92,94,101,89,103,78,108,82,119,86,127,82,133,79,134,89,141,94,147,87,145,73,142,42,127,31" shape="poly">
+          <area target="" alt="Neck" title="Neck" (click)="goTo('neck')" coords="105,82,105,92,86,97,101,105,112,107,118,112,124,108,136,106,141,102,150,98,134,93,133,81,124,87,115,87" shape="poly">
+          <area target="" alt="Arm" title="Arm" (click)="goTo('arms')" coords="84,100,72,105,64,122,65,133,57,164,47,186,45,197,36,237,45,243,51,234,62,212,67,193,80,156,83,122,92,105" shape="poly">
+          <area target="" alt="Arm" title="Arm" (click)="goTo('arms')" coords="142,107,153,112,155,121,153,133,158,144,165,169,171,199,192,241,203,238,193,196,175,140,169,113,157,101" shape="poly">
+          <area target="" alt="Torse" title="Torse" (click)="goTo('torse')" coords="99,107,90,110,84,123,84,135,82,155,85,162,87,198,82,213,103,224,120,224,140,220,155,211,149,195,151,180,154,160,157,152,152,134,153,122,149,113,139,106,126,109,119,115,110,108" shape="poly">
+          <area target="" alt="Hip" title="Hip" (click)="goTo('hips')" coords="81,216,79,226,115,261,122,263,158,226,155,214,145,220,130,225,110,227" shape="poly">
+          <area target="" alt="Leg" title="Leg" (click)="goTo('legs')" coords="78,229,71,263,87,353,88,365,84,379,97,454,109,454,116,399,113,371,115,362,116,332,112,297,117,277,114,263" shape="poly">
+          <area target="" alt="Leg" title="Leg" (click)="goTo('legs')" coords="124,264,160,228,167,260,151,354,153,371,153,394,142,454,127,453,123,393,126,366,124,335" shape="poly">
+          <area target="" alt="Feet" title="Feet" (click)="goTo('feet')" coords="96,456,96,469,91,482,110,486,113,478,111,471,112,465,112,457" shape="poly">
+          <area target="" alt="Feet" title="Feet" (click)="goTo('feet')" coords="126,455,143,456,147,483,124,483" shape="poly">
+          <area target="" alt="Hand" title="Hand" (click)="goTo('hands')" coords="33,239,47,245,41,276,25,283,14,255,23,246" shape="poly">
+          <area target="" alt="Hand" title="Hand" (click)="goTo('hands')" coords="191,244,204,239,225,253,212,284,195,275" shape="poly">
+      </map>
+   </div>
+</ion-content>

@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div class="content-logo">
+    <img src="assets/imgs/logo.png" class="logo" />
+  </div>
+  <div class="top30">
+    <form (ngSubmit)="register()">
+      <div class="form-group">
+        <label class="label-green">Name</label>
+        <input type="text" class="form-control" [(ngModel)]="user.name" name="name" />
+      </div>
+      <div class="form-group">
+        <label class="label-green">Email</label>
+        <input type="email" class="form-control" [(ngModel)]="user.email" name="email" />
+      </div>
+      <div class="form-group">
+        <label class="label-green">Phone number</label>
+        <input type="tel" class="form-control" [(ngModel)]="user.phone" name="phone" />
+      </div>
+      <div class="form-group">
+        <label class="label-green">Password</label>
+        <input type="password" class="form-control" [(ngModel)]="user.password" name="password" />
+      </div>
+      <div class="form-group">
+        <label class="label-green">Repeat Password</label>
+        <input type="password" class="form-control" [(ngModel)]="user.repeat_password" name="password" />
+      </div>
+      <div class="form-group">
+        <ion-list>
+          <ion-item>
+            <ion-label>Are you a therapist ?</ion-label>
+            <ion-toggle [(ngModel)]="user.relationship" name="relationship" color="secondary"></ion-toggle>
+          </ion-item>
+        </ion-list>
+      </div>
+      <div class="form-group" [hidden]="!user.relationship">
+        <label class="label-green">Certificate credential number</label>
+        <input type="text" class="form-control" [(ngModel)]="user.credential" name="credential" />
+      </div>
+      <div class="forgot" [hidden]="!user.relationship">
+        <span (click)="askTherapist()">Why we ask this ?</span>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="hl-button" >Register</button>
+      </div>
+    </form>
+  </div>
+  <div class="loading" [hidden]="!registring">
+    <div class="loadingcontainer">
+      <img src="assets/imgs/loading.png" class="imgloading" /><br />
+      Sending...
+    </div>
+  </div>
+</ion-content>

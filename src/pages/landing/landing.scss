@@ -1,0 +1,40 @@
+page-landing {
+   .hl-button {
+      display: block;
+      width: 70%;
+      margin: 0 auto;
+      background: $base_color;
+      background: linear-gradient(-90deg, #00AA33, #00A558);
+      padding: 10px;
+      text-transform: uppercase;
+      color:#fff;
+      border-radius: 50px;
+      font-size: 20px;
+   }
+   .top15 {
+       margin-top: 15px;
+   }
+   .top30 {
+       margin-top: 30px;
+   }
+   .footer {
+       margin-top:60px;
+       width: 100%;
+   }
+   .social-networks {
+     color: $base_color;
+     text-align: center;
+     font-size: 30px;
+   }
+   .imghead
+   {
+       display: block;
+       margin: auto;
+   }
+   .top40
+   {
+       margin-top: 40px;
+   }
+
+}
+

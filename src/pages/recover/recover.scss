@@ -1,0 +1,38 @@
+page-recover {
+    .hl-button {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      background: $base_color;
+      background: linear-gradient(-90deg, #00AA33, #00A558);
+      padding: 10px;
+      text-transform: uppercase;
+      color:#fff;
+      border-radius: 50px;
+      font-size: 20px;
+   }
+    .top30 {
+        margin-top: 30px;
+    }
+    .top50 {
+        margin-top: 50px;
+    }
+    .form-group {
+        width: 80%;
+        margin: 20px auto;
+    }
+    input.form-control {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        border: solid 1px #9E9E9E;
+        border-radius: 50px;
+    }
+    .label-green
+    {
+        color: $base_color;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+    }
+}
